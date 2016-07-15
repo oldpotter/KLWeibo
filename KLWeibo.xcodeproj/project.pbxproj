@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A9688225C886B6C018079D8 /* libPods-KLWeibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBBCE1A05577D972A4E04F2 /* libPods-KLWeibo.a */; };
+		D72006AF1D38E5EE00487704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006AE1D38E5EE00487704 /* main.m */; };
+		D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006B11D38E5EE00487704 /* AppDelegate.m */; };
+		D72006B51D38E5EE00487704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006B41D38E5EE00487704 /* ViewController.m */; };
+		D72006B81D38E5EE00487704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006B61D38E5EE00487704 /* Main.storyboard */; };
+		D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72006B91D38E5EE00487704 /* Assets.xcassets */; };
+		D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9BBBCE1A05577D972A4E04F2 /* libPods-KLWeibo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KLWeibo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0630039EB20C3D35DDB9BDE /* Pods-KLWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLWeibo/Pods-KLWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		B5988428C01DD9130AC1C6D5 /* Pods-KLWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLWeibo/Pods-KLWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		D72006AA1D38E5EE00487704 /* KLWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72006AE1D38E5EE00487704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D72006B01D38E5EE00487704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D72006B11D38E5EE00487704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D72006B31D38E5EE00487704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D72006B41D38E5EE00487704 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D72006B71D38E5EE00487704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D72006B91D38E5EE00487704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D72006BC1D38E5EE00487704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D72006BE1D38E5EE00487704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D72006A71D38E5EE00487704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9688225C886B6C018079D8 /* libPods-KLWeibo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D6C3A8D3616D1FBA29096D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5988428C01DD9130AC1C6D5 /* Pods-KLWeibo.debug.xcconfig */,
+				B0630039EB20C3D35DDB9BDE /* Pods-KLWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9083DECA163220B0FBBD49E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BBBCE1A05577D972A4E04F2 /* libPods-KLWeibo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D72006A11D38E5EE00487704 = {
+			isa = PBXGroup;
+			children = (
+				D72006AC1D38E5EE00487704 /* KLWeibo */,
+				D72006AB1D38E5EE00487704 /* Products */,
+				4D6C3A8D3616D1FBA29096D7 /* Pods */,
+				9083DECA163220B0FBBD49E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D72006AB1D38E5EE00487704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72006AA1D38E5EE00487704 /* KLWeibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72006AC1D38E5EE00487704 /* KLWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				D72006B01D38E5EE00487704 /* AppDelegate.h */,
+				D72006B11D38E5EE00487704 /* AppDelegate.m */,
+				D72006B31D38E5EE00487704 /* ViewController.h */,
+				D72006B41D38E5EE00487704 /* ViewController.m */,
+				D72006B61D38E5EE00487704 /* Main.storyboard */,
+				D72006B91D38E5EE00487704 /* Assets.xcassets */,
+				D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */,
+				D72006BE1D38E5EE00487704 /* Info.plist */,
+				D72006AD1D38E5EE00487704 /* Supporting Files */,
+			);
+			path = KLWeibo;
+			sourceTree = "<group>";
+		};
+		D72006AD1D38E5EE00487704 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D72006AE1D38E5EE00487704 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D72006A91D38E5EE00487704 /* KLWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72006C11D38E5EE00487704 /* Build configuration list for PBXNativeTarget "KLWeibo" */;
+			buildPhases = (
+				C00CD53260C2CA7DD6E09E83 /* [CP] Check Pods Manifest.lock */,
+				D72006A61D38E5EE00487704 /* Sources */,
+				D72006A71D38E5EE00487704 /* Frameworks */,
+				D72006A81D38E5EE00487704 /* Resources */,
+				28712F57297E50A3456C1F5A /* [CP] Embed Pods Frameworks */,
+				24E09CFE42514D9B74976284 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLWeibo;
+			productName = KLWeibo;
+			productReference = D72006AA1D38E5EE00487704 /* KLWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D72006A21D38E5EE00487704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZJCT;
+				TargetAttributes = {
+					D72006A91D38E5EE00487704 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D72006A51D38E5EE00487704 /* Build configuration list for PBXProject "KLWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D72006A11D38E5EE00487704;
+			productRefGroup = D72006AB1D38E5EE00487704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D72006A91D38E5EE00487704 /* KLWeibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D72006A81D38E5EE00487704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */,
+				D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */,
+				D72006B81D38E5EE00487704 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24E09CFE42514D9B74976284 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLWeibo/Pods-KLWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28712F57297E50A3456C1F5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLWeibo/Pods-KLWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C00CD53260C2CA7DD6E09E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D72006A61D38E5EE00487704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72006B51D38E5EE00487704 /* ViewController.m in Sources */,
+				D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */,
+				D72006AF1D38E5EE00487704 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D72006B61D38E5EE00487704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72006B71D38E5EE00487704 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D72006BC1D38E5EE00487704 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D72006BF1D38E5EE00487704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D72006C01D38E5EE00487704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D72006C21D38E5EE00487704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5988428C01DD9130AC1C6D5 /* Pods-KLWeibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KLWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kl-ios.KLWeibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D72006C31D38E5EE00487704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0630039EB20C3D35DDB9BDE /* Pods-KLWeibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KLWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kl-ios.KLWeibo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D72006A51D38E5EE00487704 /* Build configuration list for PBXProject "KLWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72006BF1D38E5EE00487704 /* Debug */,
+				D72006C01D38E5EE00487704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72006C11D38E5EE00487704 /* Build configuration list for PBXNativeTarget "KLWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D72006C21D38E5EE00487704 /* Debug */,
+				D72006C31D38E5EE00487704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D72006A21D38E5EE00487704 /* Project object */;
+}
