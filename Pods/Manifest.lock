@@ -8,17 +8,29 @@ PODS:
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - UITableView+FDTemplateLayoutCell (1.4)
+  - WeiboSDK (3.1.4)
 
 DEPENDENCIES:
   - Masonry
   - ReactiveCocoa (~> 2.5)
   - UITableView+FDTemplateLayoutCell
+  - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`)
+
+EXTERNAL SOURCES:
+  WeiboSDK:
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
+
+CHECKOUT OPTIONS:
+  WeiboSDK:
+    :commit: 6031a8da4ce17867ff5887b8dfc59ea45930274e
+    :git: https://github.com/sinaweibosdk/weibo_ios_sdk.git
 
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  WeiboSDK: bceab625ec59b7039ba721cc4ba9f5868804f63e
 
-PODFILE CHECKSUM: 44c6194e0f390ab37a4e54280b6145b370ace742
+PODFILE CHECKSUM: 3fdc59d119fb121fccd373780780bc834379fef0
 
 COCOAPODS: 1.0.1
