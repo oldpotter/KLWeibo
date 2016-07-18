@@ -14,6 +14,13 @@
 		D72006B81D38E5EE00487704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006B61D38E5EE00487704 /* Main.storyboard */; };
 		D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72006B91D38E5EE00487704 /* Assets.xcassets */; };
 		D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */; };
+		D7310C6C1D3CC21700DA74F7 /* KLWBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C6B1D3CC21700DA74F7 /* KLWBNavigationController.m */; };
+		D7310C711D3CC2D800DA74F7 /* KLWBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C701D3CC2D800DA74F7 /* KLWBMainViewController.m */; };
+		D7310C751D3CC68F00DA74F7 /* plus_128px_1201206_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C741D3CC68F00DA74F7 /* plus_128px_1201206_easyicon.net.png */; };
+		D7310C7A1D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C761D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png */; };
+		D7310C7B1D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */; };
+		D7310C7C1D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C781D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png */; };
+		D7310C7D1D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C791D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,18 @@
 		D72006B91D38E5EE00487704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72006BC1D38E5EE00487704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D72006BE1D38E5EE00487704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7310C6A1D3CC21700DA74F7 /* KLWBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBNavigationController.h; sourceTree = "<group>"; };
+		D7310C6B1D3CC21700DA74F7 /* KLWBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBNavigationController.m; sourceTree = "<group>"; };
+		D7310C6F1D3CC2D800DA74F7 /* KLWBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBMainViewController.h; sourceTree = "<group>"; };
+		D7310C701D3CC2D800DA74F7 /* KLWBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBMainViewController.m; sourceTree = "<group>"; };
+		D7310C741D3CC68F00DA74F7 /* plus_128px_1201206_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_128px_1201206_easyicon.net.png; sourceTree = "<group>"; };
+		D7310C761D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_128px_1185671_easyicon.net.png; sourceTree = "<group>"; };
+		D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Look_search_128px_1082487_easyicon.net.png; sourceTree = "<group>"; };
+		D7310C781D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_message_128px_1187408_easyicon.net.png; sourceTree = "<group>"; };
+		D7310C791D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_128.73142857143px_1201101_easyicon.net.png; sourceTree = "<group>"; };
+		D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D7F097DE1D3CA5A4001E59EF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
+		D7F097DF1D3CA5B7001E59EF /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +101,15 @@
 		D72006AC1D38E5EE00487704 /* KLWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				D7310C731D3CC68600DA74F7 /* Resource */,
+				D7F097E61D3CAD32001E59EF /* View */,
+				D7F097E51D3CAD2A001E59EF /* ViewModel */,
+				D7F097E41D3CAD1F001E59EF /* Model */,
+				D7F097E01D3CA982001E59EF /* Util */,
 				D72006B01D38E5EE00487704 /* AppDelegate.h */,
 				D72006B11D38E5EE00487704 /* AppDelegate.m */,
 				D72006B31D38E5EE00487704 /* ViewController.h */,
 				D72006B41D38E5EE00487704 /* ViewController.m */,
-				D72006B61D38E5EE00487704 /* Main.storyboard */,
-				D72006B91D38E5EE00487704 /* Assets.xcassets */,
-				D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */,
-				D72006BE1D38E5EE00487704 /* Info.plist */,
 				D72006AD1D38E5EE00487704 /* Supporting Files */,
 			);
 			path = KLWeibo;
@@ -98,9 +118,84 @@
 		D72006AD1D38E5EE00487704 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D72006B61D38E5EE00487704 /* Main.storyboard */,
+				D72006B91D38E5EE00487704 /* Assets.xcassets */,
+				D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */,
+				D72006BE1D38E5EE00487704 /* Info.plist */,
+				D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */,
 				D72006AE1D38E5EE00487704 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7310C691D3CC1C400DA74F7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C6A1D3CC21700DA74F7 /* KLWBNavigationController.h */,
+				D7310C6B1D3CC21700DA74F7 /* KLWBNavigationController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D7310C6E1D3CC2C200DA74F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C6F1D3CC2D800DA74F7 /* KLWBMainViewController.h */,
+				D7310C701D3CC2D800DA74F7 /* KLWBMainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D7310C721D3CC35400DA74F7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		D7310C731D3CC68600DA74F7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C761D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png */,
+				D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */,
+				D7310C781D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png */,
+				D7310C791D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png */,
+				D7310C741D3CC68F00DA74F7 /* plus_128px_1201206_easyicon.net.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D7F097E01D3CA982001E59EF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D7F097DF1D3CA5B7001E59EF /* Config.h */,
+				D7F097DE1D3CA5A4001E59EF /* Constant.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		D7F097E41D3CAD1F001E59EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7F097E51D3CAD2A001E59EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7F097E61D3CAD32001E59EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C721D3CC35400DA74F7 /* Other */,
+				D7310C6E1D3CC2C200DA74F7 /* Main */,
+				D7310C691D3CC1C400DA74F7 /* Base */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */,
+				D7310C7A1D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png in Resources */,
 				D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */,
+				D7310C7B1D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png in Resources */,
+				D7310C7D1D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png in Resources */,
+				D7310C751D3CC68F00DA74F7 /* plus_128px_1201206_easyicon.net.png in Resources */,
+				D7310C7C1D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png in Resources */,
 				D72006B81D38E5EE00487704 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,8 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72006B51D38E5EE00487704 /* ViewController.m in Sources */,
+				D7310C711D3CC2D800DA74F7 /* KLWBMainViewController.m in Sources */,
 				D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */,
 				D72006AF1D38E5EE00487704 /* main.m in Sources */,
+				D7310C6C1D3CC21700DA74F7 /* KLWBNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +441,8 @@
 			baseConfigurationReference = B5988428C01DD9130AC1C6D5 /* Pods-KLWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = KLWeibo/PrefixHeader.pch;
 				INFOPLIST_FILE = KLWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kl-ios.KLWeibo";
@@ -351,6 +455,8 @@
 			baseConfigurationReference = B0630039EB20C3D35DDB9BDE /* Pods-KLWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = KLWeibo/PrefixHeader.pch;
 				INFOPLIST_FILE = KLWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kl-ios.KLWeibo";
