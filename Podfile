@@ -7,4 +7,5 @@ pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
 pod 'AFNetworking', '~> 3.1.0'
 pod 'UIColor+BFPaperColors'
 pod 'Mantle'
+pod 'LinqToObjectiveC'
 end

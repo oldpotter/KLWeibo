@@ -10,7 +10,6 @@
 		7A9688225C886B6C018079D8 /* libPods-KLWeibo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBBCE1A05577D972A4E04F2 /* libPods-KLWeibo.a */; };
 		D72006AF1D38E5EE00487704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006AE1D38E5EE00487704 /* main.m */; };
 		D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006B11D38E5EE00487704 /* AppDelegate.m */; };
-		D72006B51D38E5EE00487704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72006B41D38E5EE00487704 /* ViewController.m */; };
 		D72006B81D38E5EE00487704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006B61D38E5EE00487704 /* Main.storyboard */; };
 		D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72006B91D38E5EE00487704 /* Assets.xcassets */; };
 		D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72006BB1D38E5EE00487704 /* LaunchScreen.storyboard */; };
@@ -34,6 +33,10 @@
 		D79187071D3DB084000C553E /* KLWBLookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187061D3DB084000C553E /* KLWBLookViewModel.m */; };
 		D791870A1D3DB090000C553E /* KLWBProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187091D3DB090000C553E /* KLWBProfileViewModel.m */; };
 		D791870D1D3DC605000C553E /* KLWBWeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D791870C1D3DC605000C553E /* KLWBWeiboModel.m */; };
+		D79187151D3DFB58000C553E /* KLWBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187141D3DFB58000C553E /* KLWBTableViewCell.m */; };
+		D79187191D3DFF04000C553E /* KLWBTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187181D3DFF04000C553E /* KLWBTableViewCellViewModel.m */; };
+		D791871C1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D791871B1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m */; };
+		D791871F1D3E034C000C553E /* KLWBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D791871E1D3E034C000C553E /* KLWBHomeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +47,6 @@
 		D72006AE1D38E5EE00487704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D72006B01D38E5EE00487704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D72006B11D38E5EE00487704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D72006B31D38E5EE00487704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D72006B41D38E5EE00487704 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D72006B71D38E5EE00487704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D72006B91D38E5EE00487704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72006BC1D38E5EE00487704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,6 +86,14 @@
 		D79187091D3DB090000C553E /* KLWBProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBProfileViewModel.m; sourceTree = "<group>"; };
 		D791870B1D3DC605000C553E /* KLWBWeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBWeiboModel.h; sourceTree = "<group>"; };
 		D791870C1D3DC605000C553E /* KLWBWeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBWeiboModel.m; sourceTree = "<group>"; };
+		D79187131D3DFB58000C553E /* KLWBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBTableViewCell.h; sourceTree = "<group>"; };
+		D79187141D3DFB58000C553E /* KLWBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBTableViewCell.m; sourceTree = "<group>"; };
+		D79187171D3DFF04000C553E /* KLWBTableViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBTableViewCellViewModel.h; sourceTree = "<group>"; };
+		D79187181D3DFF04000C553E /* KLWBTableViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBTableViewCellViewModel.m; sourceTree = "<group>"; };
+		D791871A1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBHomeTableViewCellViewModel.h; sourceTree = "<group>"; };
+		D791871B1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBHomeTableViewCellViewModel.m; sourceTree = "<group>"; };
+		D791871D1D3E034C000C553E /* KLWBHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBHomeTableViewCell.h; sourceTree = "<group>"; };
+		D791871E1D3E034C000C553E /* KLWBHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBHomeTableViewCell.m; sourceTree = "<group>"; };
 		D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D7F097DE1D3CA5A4001E59EF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		D7F097DF1D3CA5B7001E59EF /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
@@ -147,8 +156,6 @@
 				D7F097E01D3CA982001E59EF /* Util */,
 				D72006B01D38E5EE00487704 /* AppDelegate.h */,
 				D72006B11D38E5EE00487704 /* AppDelegate.m */,
-				D72006B31D38E5EE00487704 /* ViewController.h */,
-				D72006B41D38E5EE00487704 /* ViewController.m */,
 				D72006AD1D38E5EE00487704 /* Supporting Files */,
 			);
 			path = KLWeibo;
@@ -189,11 +196,15 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		D7310C721D3CC35400DA74F7 /* Other */ = {
+		D7310C721D3CC35400DA74F7 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D79187131D3DFB58000C553E /* KLWBTableViewCell.h */,
+				D79187141D3DFB58000C553E /* KLWBTableViewCell.m */,
+				D791871D1D3E034C000C553E /* KLWBHomeTableViewCell.h */,
+				D791871E1D3E034C000C553E /* KLWBHomeTableViewCell.m */,
 			);
-			name = Other;
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 		D7310C731D3CC68600DA74F7 /* Resource */ = {
@@ -291,6 +302,17 @@
 			name = Profile;
 			sourceTree = "<group>";
 		};
+		D79187161D3DFEE8000C553E /* TableViewCellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D79187171D3DFF04000C553E /* KLWBTableViewCellViewModel.h */,
+				D79187181D3DFF04000C553E /* KLWBTableViewCellViewModel.m */,
+				D791871A1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.h */,
+				D791871B1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m */,
+			);
+			name = TableViewCellViewModel;
+			sourceTree = "<group>";
+		};
 		D7F097E01D3CA982001E59EF /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +334,7 @@
 		D7F097E51D3CAD2A001E59EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D79187161D3DFEE8000C553E /* TableViewCellViewModel */,
 				D79187011D3DB058000C553E /* Profile */,
 				D79187001D3DB053000C553E /* Look */,
 				D79186FF1D3DB04D000C553E /* Message */,
@@ -324,7 +347,7 @@
 		D7F097E61D3CAD32001E59EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D7310C721D3CC35400DA74F7 /* Other */,
+				D7310C721D3CC35400DA74F7 /* TableViewCell */,
 				D7310C811D3CD54F00DA74F7 /* Profile */,
 				D7310C801D3CD54A00DA74F7 /* Look */,
 				D7310C7E1D3CD53A00DA74F7 /* Message */,
@@ -465,18 +488,21 @@
 				D79187071D3DB084000C553E /* KLWBLookViewModel.m in Sources */,
 				D7310C931D3CD5D300DA74F7 /* KLWBLookViewController.m in Sources */,
 				D79187041D3DB078000C553E /* KLWBMessageViewModel.m in Sources */,
-				D72006B51D38E5EE00487704 /* ViewController.m in Sources */,
 				D7310C711D3CC2D800DA74F7 /* KLWBMainViewController.m in Sources */,
 				D7310C901D3CD5CA00DA74F7 /* KLWBMessageViewController.m in Sources */,
 				D7310C8D1D3CD5C200DA74F7 /* KLWBHomeViewController.m in Sources */,
+				D79187191D3DFF04000C553E /* KLWBTableViewCellViewModel.m in Sources */,
 				D7310C841D3CD56600DA74F7 /* KLWBViewController.m in Sources */,
 				D7310C961D3CD5DD00DA74F7 /* KLWBProfileViewController.m in Sources */,
 				D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */,
 				D72006AF1D38E5EE00487704 /* main.m in Sources */,
+				D791871F1D3E034C000C553E /* KLWBHomeTableViewCell.m in Sources */,
 				D7310C9A1D3CDCA100DA74F7 /* KLWBViewModel.m in Sources */,
 				D79186FA1D3DAE71000C553E /* KLWBHomeViewModel.m in Sources */,
+				D791871C1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m in Sources */,
 				D791870D1D3DC605000C553E /* KLWBWeiboModel.m in Sources */,
 				D7310C6C1D3CC21700DA74F7 /* KLWBNavigationController.m in Sources */,
+				D79187151D3DFB58000C553E /* KLWBTableViewCell.m in Sources */,
 				D791870A1D3DB090000C553E /* KLWBProfileViewModel.m in Sources */,
 				D7310C9D1D3CDCB200DA74F7 /* KLWBTableViewModel.m in Sources */,
 			);

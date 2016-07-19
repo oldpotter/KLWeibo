@@ -11,6 +11,10 @@
 #import "KLWBWeiboModel.h"
 #import <MTLJSONAdapter.h>
 #import <WeiboSDK.h>
+#import "KLWBHomeTableViewCellViewModel.h"
+#import <LinqToObjectiveC.h>
+
+
 @implementation KLWBHomeViewModel
 
 - (void)initialize
@@ -30,7 +34,7 @@
             AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
             NSDictionary *info = @{
                                    @"access_token" : token,
-                                   @"count" : @3
+                                   @"count" : @50
                                    };
             [manager GET:@"https://api.weibo.com/2/statuses/public_timeline.json" parameters:info progress:^(NSProgress * _Nonnull downloadProgress) {
                 [subscriber sendNext:nil];
@@ -38,11 +42,13 @@
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 NSDictionary *info = (NSDictionary *)responseObject;
                 NSArray *weibos = info[@"statuses"];
-                [weibos enumerateObjectsUsingBlock:^(NSDictionary *weibo, NSUInteger idx, BOOL * _Nonnull stop) {
+                
+                self.dataSource = @[[weibos linq_select:^id(NSDictionary *weibo) {
                     KLWBWeiboModel *weiboModel = [MTLJSONAdapter modelOfClass:KLWBWeiboModel.class fromJSONDictionary:weibo error:nil];
-                    NSLog(@"第%ld条微博:%@",idx,weiboModel);
-//                    NSLog(@"%@",weibo);
-                }];
+                    KLWBHomeTableViewCellViewModel *cellVM = [[KLWBHomeTableViewCellViewModel alloc] initWithModel:weiboModel];
+                    return cellVM;
+                }]];
+                
                 [subscriber sendCompleted];
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 NSLog(@"有错误 :%@",error);

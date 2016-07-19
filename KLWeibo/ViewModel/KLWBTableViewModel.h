@@ -10,6 +10,6 @@
 
 @interface KLWBTableViewModel : KLWBViewModel
 
-@property (nonatomic,strong) NSArray *dataSource;
+@property (nonatomic,strong) NSArray<NSArray *> *dataSource;
 
 @end

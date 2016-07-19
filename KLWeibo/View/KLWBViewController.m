@@ -20,10 +20,19 @@
 {
     if (self = [super init]) {
         self.viewModel = viewModel;
-        [self prepareUI];
-        [self bindViewModel];
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self prepareUI];
+    
+    [self bindViewModel];
+    
+    [self.viewModel.fetchRemoteCommand execute:nil];
 }
 
 - (void)prepareUI{}
@@ -34,17 +43,14 @@
     
     RAC(self , title) = [RACObserve(self, viewModel.title) deliverOnMainThread];
     
+    //app 进入进入前台时刷新
     [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIApplicationWillEnterForegroundNotification object:nil] takeUntil:[self rac_willDeallocSignal]] subscribeNext:^(id x) {
         @strongify(self)
         [self.viewModel.fetchRemoteCommand execute:nil];
     }];
+    
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    [self.viewModel.fetchRemoteCommand execute:nil];
-}
+
 
 @end

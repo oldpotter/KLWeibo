@@ -8,6 +8,11 @@
 
 #import "KLWBViewController.h"
 
-@interface KLWBTableViewController : KLWBViewController
+
+#define kCellId @"kCellId"
+
+@interface KLWBTableViewController : KLWBViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) UITableView *tableView;
 
 @end
