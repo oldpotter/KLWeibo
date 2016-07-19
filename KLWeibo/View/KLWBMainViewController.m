@@ -9,11 +9,23 @@
 #import "KLWBMainViewController.h"
 #import <Masonry.h>
 #import <UIColor+BFPaperColors.h>
+#import "KLWBHomeViewController.h"
+#import "KLWBMessageViewController.h"
+#import "KLWBLookViewController.h"
+#import "KLWBProfileViewController.h"
+#import <ReactiveCocoa.h>
+#import "KLWBHomeViewModel.h"
+#import "KLWBMessageViewModel.h"
+#import "KLWBLookViewModel.h"
+#import "KLWBProfileViewModel.h"
 
 #pragma mark tab bar item
 @interface KLWBTabBarItem : UIButton
 
 + (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image;
+
+
+
 @end
 
 
@@ -24,7 +36,6 @@
     UIEdgeInsets insets = UIEdgeInsetsMake(1, 1, 1, 1);
     
     KLWBTabBarItem *item = [[KLWBTabBarItem alloc] init];
-    item.backgroundColor = [UIColor yellowColor];
     
     //title
     UILabel *lblTitle = [[UILabel alloc] init];
@@ -45,6 +56,7 @@
         make.centerX.mas_equalTo(item.center.x);
         make.size.mas_equalTo(CGSizeMake(20, 20));
     }];
+    
 
     return item;
     
@@ -61,6 +73,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    @weakify(self)
     
     UIEdgeInsets insets = UIEdgeInsetsMake(5, 5, 5, 5);
     
@@ -92,6 +105,14 @@
         make.left.mas_equalTo(tabBar.mas_left).offset(KLWScreenWidth/10);
     }];
     
+    KLWBHomeViewModel *homeVM = [[KLWBHomeViewModel alloc] init];
+    KLWBHomeViewController *homeVC = [[KLWBHomeViewController alloc] initWithViewModel:homeVM];
+    [[home rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [self setSelectedIndex:0];
+    }];
+    
+    
     //消息
     KLWBTabBarItem *message = [KLWBTabBarItem itemWithTitle:@"消息" image:[UIImage imageNamed:@"text_message_128px_1187408_easyicon.net.png"]];
     [tabBar addSubview:message];
@@ -99,6 +120,13 @@
         make.top.bottom.mas_equalTo(tabBar).insets(insets);
         make.width.mas_equalTo(message.mas_height);
         make.left.mas_equalTo(home.mas_right).offset(20);
+    }];
+    
+    KLWBMessageViewModel *messageVM = [[KLWBMessageViewModel alloc] init];
+    KLWBMessageViewController *messageVC = [[KLWBMessageViewController alloc] initWithViewModel:messageVM];
+    [[message rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [self setSelectedIndex:1];
     }];
     
     //发现
@@ -110,6 +138,13 @@
         make.left.mas_equalTo(buttonPlus.mas_right).offset(20);
     }];
     
+    KLWBLookViewModel *lookVM = [[KLWBLookViewModel alloc] init];
+    KLWBLookViewController *lookVC = [[KLWBLookViewController alloc] initWithViewModel:lookVM];
+    [[look rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [self setSelectedIndex:2];
+    }];
+    
     //我
     KLWBTabBarItem *me = [KLWBTabBarItem itemWithTitle:@"我" image:[UIImage imageNamed:@"profile_128px_1185671_easyicon.net.png"]];
     [tabBar addSubview:me];
@@ -118,13 +153,24 @@
         make.width.mas_equalTo(message.mas_height);
         make.left.mas_equalTo(look.mas_right).offset(20);
     }];
-}
+    
+    KLWBProfileViewModel *profileVM = [[KLWBProfileViewModel alloc] init];
+    KLWBProfileViewController *meVC = [[KLWBProfileViewController alloc] initWithViewModel:profileVM];
+    [[me rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self)
+        [self setSelectedIndex:3];
+    }];
+    
+    
+    self.viewControllers = @[
+                             [[UINavigationController alloc] initWithRootViewController:homeVC],
+                             [[UINavigationController alloc] initWithRootViewController:messageVC],
+                             [[UINavigationController alloc] initWithRootViewController:lookVC],
+                             [[UINavigationController alloc] initWithRootViewController:meVC]
+                             ];
+    
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end
 

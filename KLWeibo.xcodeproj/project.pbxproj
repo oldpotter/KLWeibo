@@ -21,6 +21,19 @@
 		D7310C7B1D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */; };
 		D7310C7C1D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C781D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png */; };
 		D7310C7D1D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D7310C791D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png */; };
+		D7310C841D3CD56600DA74F7 /* KLWBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C831D3CD56600DA74F7 /* KLWBViewController.m */; };
+		D7310C871D3CD57700DA74F7 /* KLWBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C861D3CD57700DA74F7 /* KLWBTableViewController.m */; };
+		D7310C8D1D3CD5C200DA74F7 /* KLWBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C8C1D3CD5C200DA74F7 /* KLWBHomeViewController.m */; };
+		D7310C901D3CD5CA00DA74F7 /* KLWBMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C8F1D3CD5CA00DA74F7 /* KLWBMessageViewController.m */; };
+		D7310C931D3CD5D300DA74F7 /* KLWBLookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C921D3CD5D300DA74F7 /* KLWBLookViewController.m */; };
+		D7310C961D3CD5DD00DA74F7 /* KLWBProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C951D3CD5DD00DA74F7 /* KLWBProfileViewController.m */; };
+		D7310C9A1D3CDCA100DA74F7 /* KLWBViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C991D3CDCA100DA74F7 /* KLWBViewModel.m */; };
+		D7310C9D1D3CDCB200DA74F7 /* KLWBTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7310C9C1D3CDCB200DA74F7 /* KLWBTableViewModel.m */; };
+		D79186FA1D3DAE71000C553E /* KLWBHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79186F91D3DAE71000C553E /* KLWBHomeViewModel.m */; };
+		D79187041D3DB078000C553E /* KLWBMessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187031D3DB078000C553E /* KLWBMessageViewModel.m */; };
+		D79187071D3DB084000C553E /* KLWBLookViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187061D3DB084000C553E /* KLWBLookViewModel.m */; };
+		D791870A1D3DB090000C553E /* KLWBProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D79187091D3DB090000C553E /* KLWBProfileViewModel.m */; };
+		D791870D1D3DC605000C553E /* KLWBWeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D791870C1D3DC605000C553E /* KLWBWeiboModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +59,32 @@
 		D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Look_search_128px_1082487_easyicon.net.png; sourceTree = "<group>"; };
 		D7310C781D3CC84900DA74F7 /* text_message_128px_1187408_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_message_128px_1187408_easyicon.net.png; sourceTree = "<group>"; };
 		D7310C791D3CC84900DA74F7 /* home_128.73142857143px_1201101_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_128.73142857143px_1201101_easyicon.net.png; sourceTree = "<group>"; };
+		D7310C821D3CD56600DA74F7 /* KLWBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBViewController.h; sourceTree = "<group>"; };
+		D7310C831D3CD56600DA74F7 /* KLWBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBViewController.m; sourceTree = "<group>"; };
+		D7310C851D3CD57700DA74F7 /* KLWBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBTableViewController.h; sourceTree = "<group>"; };
+		D7310C861D3CD57700DA74F7 /* KLWBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBTableViewController.m; sourceTree = "<group>"; };
+		D7310C8B1D3CD5C200DA74F7 /* KLWBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBHomeViewController.h; sourceTree = "<group>"; };
+		D7310C8C1D3CD5C200DA74F7 /* KLWBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBHomeViewController.m; sourceTree = "<group>"; };
+		D7310C8E1D3CD5CA00DA74F7 /* KLWBMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBMessageViewController.h; sourceTree = "<group>"; };
+		D7310C8F1D3CD5CA00DA74F7 /* KLWBMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBMessageViewController.m; sourceTree = "<group>"; };
+		D7310C911D3CD5D300DA74F7 /* KLWBLookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBLookViewController.h; sourceTree = "<group>"; };
+		D7310C921D3CD5D300DA74F7 /* KLWBLookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBLookViewController.m; sourceTree = "<group>"; };
+		D7310C941D3CD5DD00DA74F7 /* KLWBProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBProfileViewController.h; sourceTree = "<group>"; };
+		D7310C951D3CD5DD00DA74F7 /* KLWBProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBProfileViewController.m; sourceTree = "<group>"; };
+		D7310C981D3CDCA100DA74F7 /* KLWBViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBViewModel.h; sourceTree = "<group>"; };
+		D7310C991D3CDCA100DA74F7 /* KLWBViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBViewModel.m; sourceTree = "<group>"; };
+		D7310C9B1D3CDCB200DA74F7 /* KLWBTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBTableViewModel.h; sourceTree = "<group>"; };
+		D7310C9C1D3CDCB200DA74F7 /* KLWBTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBTableViewModel.m; sourceTree = "<group>"; };
+		D79186F81D3DAE71000C553E /* KLWBHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBHomeViewModel.h; sourceTree = "<group>"; };
+		D79186F91D3DAE71000C553E /* KLWBHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBHomeViewModel.m; sourceTree = "<group>"; };
+		D79187021D3DB078000C553E /* KLWBMessageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBMessageViewModel.h; sourceTree = "<group>"; };
+		D79187031D3DB078000C553E /* KLWBMessageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBMessageViewModel.m; sourceTree = "<group>"; };
+		D79187051D3DB084000C553E /* KLWBLookViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBLookViewModel.h; sourceTree = "<group>"; };
+		D79187061D3DB084000C553E /* KLWBLookViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBLookViewModel.m; sourceTree = "<group>"; };
+		D79187081D3DB090000C553E /* KLWBProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBProfileViewModel.h; sourceTree = "<group>"; };
+		D79187091D3DB090000C553E /* KLWBProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBProfileViewModel.m; sourceTree = "<group>"; };
+		D791870B1D3DC605000C553E /* KLWBWeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBWeiboModel.h; sourceTree = "<group>"; };
+		D791870C1D3DC605000C553E /* KLWBWeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBWeiboModel.m; sourceTree = "<group>"; };
 		D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D7F097DE1D3CA5A4001E59EF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		D7F097DF1D3CA5B7001E59EF /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
@@ -133,6 +172,10 @@
 			children = (
 				D7310C6A1D3CC21700DA74F7 /* KLWBNavigationController.h */,
 				D7310C6B1D3CC21700DA74F7 /* KLWBNavigationController.m */,
+				D7310C821D3CD56600DA74F7 /* KLWBViewController.h */,
+				D7310C831D3CD56600DA74F7 /* KLWBViewController.m */,
+				D7310C851D3CD57700DA74F7 /* KLWBTableViewController.h */,
+				D7310C861D3CD57700DA74F7 /* KLWBTableViewController.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -165,6 +208,89 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		D7310C7E1D3CD53A00DA74F7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C8E1D3CD5CA00DA74F7 /* KLWBMessageViewController.h */,
+				D7310C8F1D3CD5CA00DA74F7 /* KLWBMessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		D7310C7F1D3CD54400DA74F7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C8B1D3CD5C200DA74F7 /* KLWBHomeViewController.h */,
+				D7310C8C1D3CD5C200DA74F7 /* KLWBHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D7310C801D3CD54A00DA74F7 /* Look */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C911D3CD5D300DA74F7 /* KLWBLookViewController.h */,
+				D7310C921D3CD5D300DA74F7 /* KLWBLookViewController.m */,
+			);
+			name = Look;
+			sourceTree = "<group>";
+		};
+		D7310C811D3CD54F00DA74F7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C941D3CD5DD00DA74F7 /* KLWBProfileViewController.h */,
+				D7310C951D3CD5DD00DA74F7 /* KLWBProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		D7310C971D3CD64E00DA74F7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D7310C981D3CDCA100DA74F7 /* KLWBViewModel.h */,
+				D7310C991D3CDCA100DA74F7 /* KLWBViewModel.m */,
+				D7310C9B1D3CDCB200DA74F7 /* KLWBTableViewModel.h */,
+				D7310C9C1D3CDCB200DA74F7 /* KLWBTableViewModel.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D79186F21D3DAD16000C553E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D79186F81D3DAE71000C553E /* KLWBHomeViewModel.h */,
+				D79186F91D3DAE71000C553E /* KLWBHomeViewModel.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D79186FF1D3DB04D000C553E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D79187021D3DB078000C553E /* KLWBMessageViewModel.h */,
+				D79187031D3DB078000C553E /* KLWBMessageViewModel.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		D79187001D3DB053000C553E /* Look */ = {
+			isa = PBXGroup;
+			children = (
+				D79187051D3DB084000C553E /* KLWBLookViewModel.h */,
+				D79187061D3DB084000C553E /* KLWBLookViewModel.m */,
+			);
+			name = Look;
+			sourceTree = "<group>";
+		};
+		D79187011D3DB058000C553E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D79187081D3DB090000C553E /* KLWBProfileViewModel.h */,
+				D79187091D3DB090000C553E /* KLWBProfileViewModel.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		D7F097E01D3CA982001E59EF /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +303,8 @@
 		D7F097E41D3CAD1F001E59EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D791870B1D3DC605000C553E /* KLWBWeiboModel.h */,
+				D791870C1D3DC605000C553E /* KLWBWeiboModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +312,11 @@
 		D7F097E51D3CAD2A001E59EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D79187011D3DB058000C553E /* Profile */,
+				D79187001D3DB053000C553E /* Look */,
+				D79186FF1D3DB04D000C553E /* Message */,
+				D79186F21D3DAD16000C553E /* Home */,
+				D7310C971D3CD64E00DA74F7 /* Base */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +325,10 @@
 			isa = PBXGroup;
 			children = (
 				D7310C721D3CC35400DA74F7 /* Other */,
+				D7310C811D3CD54F00DA74F7 /* Profile */,
+				D7310C801D3CD54A00DA74F7 /* Look */,
+				D7310C7E1D3CD53A00DA74F7 /* Message */,
+				D7310C7F1D3CD54400DA74F7 /* Home */,
 				D7310C6E1D3CC2C200DA74F7 /* Main */,
 				D7310C691D3CC1C400DA74F7 /* Base */,
 			);
@@ -324,11 +461,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7310C871D3CD57700DA74F7 /* KLWBTableViewController.m in Sources */,
+				D79187071D3DB084000C553E /* KLWBLookViewModel.m in Sources */,
+				D7310C931D3CD5D300DA74F7 /* KLWBLookViewController.m in Sources */,
+				D79187041D3DB078000C553E /* KLWBMessageViewModel.m in Sources */,
 				D72006B51D38E5EE00487704 /* ViewController.m in Sources */,
 				D7310C711D3CC2D800DA74F7 /* KLWBMainViewController.m in Sources */,
+				D7310C901D3CD5CA00DA74F7 /* KLWBMessageViewController.m in Sources */,
+				D7310C8D1D3CD5C200DA74F7 /* KLWBHomeViewController.m in Sources */,
+				D7310C841D3CD56600DA74F7 /* KLWBViewController.m in Sources */,
+				D7310C961D3CD5DD00DA74F7 /* KLWBProfileViewController.m in Sources */,
 				D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */,
 				D72006AF1D38E5EE00487704 /* main.m in Sources */,
+				D7310C9A1D3CDCA100DA74F7 /* KLWBViewModel.m in Sources */,
+				D79186FA1D3DAE71000C553E /* KLWBHomeViewModel.m in Sources */,
+				D791870D1D3DC605000C553E /* KLWBWeiboModel.m in Sources */,
 				D7310C6C1D3CC21700DA74F7 /* KLWBNavigationController.m in Sources */,
+				D791870A1D3DB090000C553E /* KLWBProfileViewModel.m in Sources */,
+				D7310C9D1D3CDCB200DA74F7 /* KLWBTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
