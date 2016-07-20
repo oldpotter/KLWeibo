@@ -12,4 +12,6 @@
 
 @property (nonatomic,strong) NSArray<NSArray *> *dataSource;
 
+- (void)reloadTableView;
+
 @end

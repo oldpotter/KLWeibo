@@ -60,8 +60,7 @@
     RAC(self.lblDate , text) = [RACObserve(self, viewModel.model.date) deliverOnMainThread];
     [[RACObserve(self, viewModel.model) deliverOnMainThread] subscribeNext:^(id x) {
         @strongify(self)
-        NSString *strURL = self.viewModel.model.thumbnail_pic;
-        if (strURL && ![strURL isEqualToString:@""]) {
+        if (self.viewModel.model.thumbnail_pic) {
             [self.ivImage sd_setImageWithURL:[NSURL URLWithString:self.viewModel.model.thumbnail_pic] placeholderImage:[UIImage imageNamed:@"20160720015706672_easyicon_net_512.ico"]];
         }else{
             self.ivImage.image = nil;
@@ -69,5 +68,12 @@
     }];
 }
 
+
+- (void)setCellViewModel:(id)viewModel
+{
+    [super setCellViewModel:viewModel];
+    
+//    NSLog(@"model:%@",self.viewModel.model);
+}
 
 @end

@@ -1,15 +1,17 @@
 //
 //  KLWBWeibo.m
-//  KLWeibo
+//  
 //
-//  Created by Tom on 16/7/19.
-//  Copyright © 2016年 ZJCT. All rights reserved.
+//  Created by Tom on 16/7/20.
+//
 //
 
 #import "KLWBWeibo.h"
 
 @implementation KLWBWeibo
 
-// Insert code here to add functionality to your managed object subclass
-
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"text:%@",self.text];
+}
 @end

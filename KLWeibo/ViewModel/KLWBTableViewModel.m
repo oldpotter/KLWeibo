@@ -10,4 +10,6 @@
 
 @implementation KLWBTableViewModel
 
+- (void)reloadTableView{}
+
 @end

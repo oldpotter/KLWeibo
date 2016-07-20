@@ -13,7 +13,7 @@
 #import <WeiboSDK.h>
 #import <MagicalRecord/MagicalRecord.h>
 #import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
-
+#import <MJExtension/MJExtension.h>
 
 @interface KLWBViewModel : NSObject
 

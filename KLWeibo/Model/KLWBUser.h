@@ -1,5 +1,5 @@
 //
-//  KLWBWeibo.h
+//  KLWBUser.h
 //  
 //
 //  Created by Tom on 16/7/20.
@@ -11,11 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KLWBWeibo : NSManagedObject
+@interface KLWBUser : NSManagedObject
 
+// Insert code here to declare functionality of your managed object subclass
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "KLWBWeibo+CoreDataProperties.h"
+#import "KLWBUser+CoreDataProperties.h"

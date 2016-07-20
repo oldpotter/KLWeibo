@@ -18,7 +18,7 @@
 @end
 
 @implementation KLWBTableViewController
-
+@synthesize viewModel;
 - (void)prepareUI
 {
     [super prepareUI];
@@ -39,6 +39,10 @@
         @strongify(self)
         [self.tableView reloadData];
     }];
+//    [[[self.viewModel rac_signalForSelector:@selector(reloadTableView)] deliverOnMainThread] subscribeNext:^(id x) {
+//        @strongify(self)
+//        [self.tableView reloadData];
+//    }];
 }
 
 

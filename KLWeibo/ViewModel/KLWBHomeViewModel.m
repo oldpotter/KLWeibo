@@ -51,7 +51,6 @@
     if (!_fetchRemoteCommand) {
         _fetchRemoteCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                @strongify(self)
                 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
                 NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWAccessToken];
                 NSDictionary *info = @{
@@ -64,17 +63,24 @@
                 } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                     
                     NSDictionary *info = (NSDictionary *)responseObject;
-                    __block NSArray *weibos = info[@"statuses"];
+                    __block NSArray *weibos = [KLWBWeibo MR_importFromArray:info[@"statuses"]];
                     
-                    [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
-                        weibos = [KLWBWeibo MR_importFromArray:weibos inContext:localContext];
-                    } completion:^(BOOL contextDidSave, NSError * _Nullable error) {
-                        NSLog(@"%@",contextDidSave ? @"保存成功" : @"保存失败");
+//                    [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
+//                        [KLWBWeibo MR_importFromArray:weibos inContext:localContext];
+//                    } completion:^(BOOL contextDidSave, NSError * _Nullable error) {
+//                        NSLog(@"%@",contextDidSave ? @"保存成功" : @"保存失败");
+//                    }];
+                    
+                    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL contextDidSave, NSError * _Nullable error) {
+                        if (contextDidSave) {
+                            NSLog(@"保存成功");
+                        }else{
+                            NSLog(@"保存出错:%@",error);
+                        }
                     }];
                     
                     self.dataSource = @[[weibos linq_select:^id(KLWBWeibo *weibo) {
-                        KLWBHomeTableViewCellViewModel *cellVM = [[KLWBHomeTableViewCellViewModel alloc] initWithModel:weibo];
-                        return cellVM;
+                        return [[KLWBHomeTableViewCellViewModel alloc] initWithModel:weibo];
                     }]];
                     
                     [subscriber sendCompleted];

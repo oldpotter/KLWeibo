@@ -37,9 +37,11 @@
 		D791871C1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D791871B1D3DFF48000C553E /* KLWBHomeTableViewCellViewModel.m */; };
 		D791871F1D3E034C000C553E /* KLWBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D791871E1D3E034C000C553E /* KLWBHomeTableViewCell.m */; };
 		D79E2A391D3E12BD000ABE8D /* KLWeibo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A371D3E12BD000ABE8D /* KLWeibo.xcdatamodeld */; };
-		D79E2A471D3E1849000ABE8D /* KLWBWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A451D3E1849000ABE8D /* KLWBWeibo.m */; };
-		D79E2A511D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A501D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.m */; };
 		D79E2A581D3F4A45000ABE8D /* 20160720015706672_easyicon_net_512.ico in Resources */ = {isa = PBXBuildFile; fileRef = D79E2A571D3F4A45000ABE8D /* 20160720015706672_easyicon_net_512.ico */; };
+		D79E2A6C1D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A651D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.m */; };
+		D79E2A6D1D3F5FEC000ABE8D /* KLWBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A671D3F5FEC000ABE8D /* KLWBUser.m */; };
+		D79E2A6E1D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A691D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m */; };
+		D79E2A6F1D3F5FEC000ABE8D /* KLWBWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A6B1D3F5FEC000ABE8D /* KLWBWeibo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,15 +98,20 @@
 		D791871D1D3E034C000C553E /* KLWBHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBHomeTableViewCell.h; sourceTree = "<group>"; };
 		D791871E1D3E034C000C553E /* KLWBHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBHomeTableViewCell.m; sourceTree = "<group>"; };
 		D79E2A381D3E12BD000ABE8D /* KLWeibo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KLWeibo.xcdatamodel; sourceTree = "<group>"; };
-		D79E2A441D3E1849000ABE8D /* KLWBWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBWeibo.h; sourceTree = "<group>"; };
-		D79E2A451D3E1849000ABE8D /* KLWBWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBWeibo.m; sourceTree = "<group>"; };
 		D79E2A481D3F1C43000ABE8D /* KLWeibo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo 2.xcdatamodel"; sourceTree = "<group>"; };
-		D79E2A4F1D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KLWBWeibo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		D79E2A501D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KLWBWeibo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D79E2A521D3F40E6000ABE8D /* KLWeibo 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo 3.xcdatamodel"; sourceTree = "<group>"; };
 		D79E2A561D3F43A1000ABE8D /* KLWeibo 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo 4.xcdatamodel"; sourceTree = "<group>"; };
 		D79E2A571D3F4A45000ABE8D /* 20160720015706672_easyicon_net_512.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 20160720015706672_easyicon_net_512.ico; sourceTree = "<group>"; };
 		D79E2A591D3F4ECB000ABE8D /* KLWeibo test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo test.xcdatamodel"; sourceTree = "<group>"; };
+		D79E2A631D3F5FBB000ABE8D /* KLWeibo 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo 5.xcdatamodel"; sourceTree = "<group>"; };
+		D79E2A641D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KLWBUser+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D79E2A651D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KLWBUser+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D79E2A661D3F5FEC000ABE8D /* KLWBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBUser.h; sourceTree = "<group>"; };
+		D79E2A671D3F5FEC000ABE8D /* KLWBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBUser.m; sourceTree = "<group>"; };
+		D79E2A681D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KLWBWeibo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D79E2A691D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KLWBWeibo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D79E2A6A1D3F5FEC000ABE8D /* KLWBWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBWeibo.h; sourceTree = "<group>"; };
+		D79E2A6B1D3F5FEC000ABE8D /* KLWBWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBWeibo.m; sourceTree = "<group>"; };
 		D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D7F097DE1D3CA5A4001E59EF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		D7F097DF1D3CA5B7001E59EF /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
@@ -338,10 +345,14 @@
 			isa = PBXGroup;
 			children = (
 				D79E2A371D3E12BD000ABE8D /* KLWeibo.xcdatamodeld */,
-				D79E2A441D3E1849000ABE8D /* KLWBWeibo.h */,
-				D79E2A451D3E1849000ABE8D /* KLWBWeibo.m */,
-				D79E2A4F1D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.h */,
-				D79E2A501D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.m */,
+				D79E2A641D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.h */,
+				D79E2A651D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.m */,
+				D79E2A661D3F5FEC000ABE8D /* KLWBUser.h */,
+				D79E2A671D3F5FEC000ABE8D /* KLWBUser.m */,
+				D79E2A681D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.h */,
+				D79E2A691D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m */,
+				D79E2A6A1D3F5FEC000ABE8D /* KLWBWeibo.h */,
+				D79E2A6B1D3F5FEC000ABE8D /* KLWBWeibo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,10 +513,11 @@
 			files = (
 				D7310C871D3CD57700DA74F7 /* KLWBTableViewController.m in Sources */,
 				D79187071D3DB084000C553E /* KLWBLookViewModel.m in Sources */,
-				D79E2A511D3F1D87000ABE8D /* KLWBWeibo+CoreDataProperties.m in Sources */,
+				D79E2A6E1D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m in Sources */,
+				D79E2A6F1D3F5FEC000ABE8D /* KLWBWeibo.m in Sources */,
 				D7310C931D3CD5D300DA74F7 /* KLWBLookViewController.m in Sources */,
-				D79E2A471D3E1849000ABE8D /* KLWBWeibo.m in Sources */,
 				D79187041D3DB078000C553E /* KLWBMessageViewModel.m in Sources */,
+				D79E2A6C1D3F5FEC000ABE8D /* KLWBUser+CoreDataProperties.m in Sources */,
 				D7310C711D3CC2D800DA74F7 /* KLWBMainViewController.m in Sources */,
 				D7310C901D3CD5CA00DA74F7 /* KLWBMessageViewController.m in Sources */,
 				D7310C8D1D3CD5C200DA74F7 /* KLWBHomeViewController.m in Sources */,
@@ -513,6 +525,7 @@
 				D7310C841D3CD56600DA74F7 /* KLWBViewController.m in Sources */,
 				D79E2A391D3E12BD000ABE8D /* KLWeibo.xcdatamodeld in Sources */,
 				D7310C961D3CD5DD00DA74F7 /* KLWBProfileViewController.m in Sources */,
+				D79E2A6D1D3F5FEC000ABE8D /* KLWBUser.m in Sources */,
 				D72006B21D38E5EE00487704 /* AppDelegate.m in Sources */,
 				D72006AF1D38E5EE00487704 /* main.m in Sources */,
 				D791871F1D3E034C000C553E /* KLWBHomeTableViewCell.m in Sources */,
@@ -685,13 +698,14 @@
 		D79E2A371D3E12BD000ABE8D /* KLWeibo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D79E2A631D3F5FBB000ABE8D /* KLWeibo 5.xcdatamodel */,
 				D79E2A591D3F4ECB000ABE8D /* KLWeibo test.xcdatamodel */,
 				D79E2A561D3F43A1000ABE8D /* KLWeibo 4.xcdatamodel */,
 				D79E2A521D3F40E6000ABE8D /* KLWeibo 3.xcdatamodel */,
 				D79E2A481D3F1C43000ABE8D /* KLWeibo 2.xcdatamodel */,
 				D79E2A381D3E12BD000ABE8D /* KLWeibo.xcdatamodel */,
 			);
-			currentVersion = D79E2A561D3F43A1000ABE8D /* KLWeibo 4.xcdatamodel */;
+			currentVersion = D79E2A631D3F5FBB000ABE8D /* KLWeibo 5.xcdatamodel */;
 			path = KLWeibo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
