@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <WeiboSDK/WeiboSDK.h>
 #import "KLWBMainViewController.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()<WeiboSDKDelegate>
 
@@ -19,9 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     [WeiboSDK enableDebugMode:YES];
     [WeiboSDK registerApp:kAppKey];
+    
+    NSURL *homeURL = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
+    NSLog(@"主目录:$%@",homeURL.path);
+    //magic record
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreAtURL:[homeURL URLByAppendingPathComponent:@"klwb"]];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
@@ -30,6 +35,11 @@
     return YES;
 }
 
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    [MagicalRecord cleanUp];
+}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {

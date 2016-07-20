@@ -14,10 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
   - LinqToObjectiveC (2.1.0)
-  - Mantle (2.0.7):
-    - Mantle/extobjc (= 2.0.7)
-  - Mantle/extobjc (2.0.7)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/CocoaLumberjack (2.3.2):
+    - CocoaLumberjack (~> 2.0)
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.3.2)
   - Masonry (1.0.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -26,6 +37,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - UIColor+BFPaperColors (1.7.2)
   - UITableView+FDTemplateLayoutCell (1.4)
   - WeiboSDK (3.1.4)
@@ -33,9 +47,11 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - LinqToObjectiveC
-  - Mantle
+  - MagicalRecord
+  - MagicalRecord/CocoaLumberjack
   - Masonry
   - ReactiveCocoa (~> 2.5)
+  - SDWebImage
   - UIColor+BFPaperColors
   - UITableView+FDTemplateLayoutCell
   - WeiboSDK (from `https://github.com/sinaweibosdk/weibo_ios_sdk.git`)
@@ -51,14 +67,16 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   LinqToObjectiveC: f0e40c137a458b6b9725c4c7b6a575c0c72e3aec
-  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   WeiboSDK: bceab625ec59b7039ba721cc4ba9f5868804f63e
 
-PODFILE CHECKSUM: 01e1980cd7f2aac89293565022e47df2b947424e
+PODFILE CHECKSUM: 2124bbdd4cfb795c3b355210a36cae2b06635e9d
 
 COCOAPODS: 1.0.1

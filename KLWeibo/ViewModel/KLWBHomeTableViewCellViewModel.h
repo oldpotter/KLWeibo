@@ -7,10 +7,10 @@
 //
 
 #import "KLWBTableViewCellViewModel.h"
-#import "KLWBWeiboModel.h"
+#import "KLWBWeibo.h"
 
 @interface KLWBHomeTableViewCellViewModel : KLWBTableViewCellViewModel
 
-@property (nonatomic,strong) KLWBWeiboModel *model;
+@property (nonatomic,strong) KLWBWeibo *model;
 
 @end

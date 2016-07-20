@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="KLWBWeibo" representedClassName="KLWBWeibo" syncable="YES">
+        <attribute name="bmiddle_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="dateFormat" value="EEE MMM d HH:mm:ss Z yyyy"/>
+                <entry key="mappedKeyName" value="created_at"/>
+            </userInfo>
+        </attribute>
+        <attribute name="original_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_urls" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail_pic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wb_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="wb_strId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="idstr"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="KLWBWeibo" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

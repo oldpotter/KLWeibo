@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KLWeibo/Model/KLWBWeibo+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:KLWeibo/Model/KLWBWeibo+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:KLWeibo.xcodeproj">
    </FileRef>
    <FileRef

@@ -9,11 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
 #import <ReactiveCocoa.h>
+#import <LinqToObjectiveC.h>
+#import <WeiboSDK.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+
+
 @interface KLWBViewModel : NSObject
 
 
 @property (nonatomic,copy) NSString *title;
 
+@property (nonatomic,strong) RACCommand *fetchLocalCommand;
 
 @property (nonatomic,strong) RACCommand *fetchRemoteCommand;
 

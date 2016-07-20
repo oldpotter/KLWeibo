@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Masonry.h>
 #import <ReactiveCocoa.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define kPadding 5
 #define kInsets UIEdgeInsetsMake(kPadding, kPadding, kPadding, kPadding)
