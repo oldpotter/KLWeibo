@@ -21,5 +21,6 @@
 @dynamic thumbnail_pic;
 @dynamic wb_id;
 @dynamic wb_strId;
+@dynamic user;
 
 @end

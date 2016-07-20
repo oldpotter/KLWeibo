@@ -10,7 +10,7 @@
 //
 
 #import "KLWBWeibo.h"
-
+#import "KLWBUser.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KLWBWeibo (CoreDataProperties)
@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *thumbnail_pic;
 @property (nonatomic) int64_t wb_id;
 @property (nullable, nonatomic, retain) NSString *wb_strId;
+@property (nullable, nonatomic, retain) KLWBUser *user;
 
 @end
 

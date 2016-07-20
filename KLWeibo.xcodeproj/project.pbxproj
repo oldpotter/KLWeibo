@@ -42,6 +42,7 @@
 		D79E2A6D1D3F5FEC000ABE8D /* KLWBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A671D3F5FEC000ABE8D /* KLWBUser.m */; };
 		D79E2A6E1D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A691D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m */; };
 		D79E2A6F1D3F5FEC000ABE8D /* KLWBWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = D79E2A6B1D3F5FEC000ABE8D /* KLWBWeibo.m */; };
+		D7D53E641D3F796B001E089B /* avatar_holder.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D53E631D3F796B001E089B /* avatar_holder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,8 @@
 		D79E2A691D3F5FEC000ABE8D /* KLWBWeibo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KLWBWeibo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		D79E2A6A1D3F5FEC000ABE8D /* KLWBWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWBWeibo.h; sourceTree = "<group>"; };
 		D79E2A6B1D3F5FEC000ABE8D /* KLWBWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWBWeibo.m; sourceTree = "<group>"; };
+		D7D53E601D3F72BE001E089B /* KLWeibo 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "KLWeibo 6.xcdatamodel"; sourceTree = "<group>"; };
+		D7D53E631D3F796B001E089B /* avatar_holder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_holder.png; sourceTree = "<group>"; };
 		D7F097DD1D3C7032001E59EF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D7F097DE1D3CA5A4001E59EF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		D7F097DF1D3CA5B7001E59EF /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 		D7310C731D3CC68600DA74F7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D7D53E631D3F796B001E089B /* avatar_holder.png */,
 				D79E2A571D3F4A45000ABE8D /* 20160720015706672_easyicon_net_512.ico */,
 				D7310C761D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png */,
 				D7310C771D3CC84900DA74F7 /* Look_search_128px_1082487_easyicon.net.png */,
@@ -444,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D53E641D3F796B001E089B /* avatar_holder.png in Resources */,
 				D72006BD1D38E5EE00487704 /* LaunchScreen.storyboard in Resources */,
 				D7310C7A1D3CC84900DA74F7 /* profile_128px_1185671_easyicon.net.png in Resources */,
 				D72006BA1D38E5EE00487704 /* Assets.xcassets in Resources */,
@@ -698,6 +703,7 @@
 		D79E2A371D3E12BD000ABE8D /* KLWeibo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D7D53E601D3F72BE001E089B /* KLWeibo 6.xcdatamodel */,
 				D79E2A631D3F5FBB000ABE8D /* KLWeibo 5.xcdatamodel */,
 				D79E2A591D3F4ECB000ABE8D /* KLWeibo test.xcdatamodel */,
 				D79E2A561D3F43A1000ABE8D /* KLWeibo 4.xcdatamodel */,
@@ -705,7 +711,7 @@
 				D79E2A481D3F1C43000ABE8D /* KLWeibo 2.xcdatamodel */,
 				D79E2A381D3E12BD000ABE8D /* KLWeibo.xcdatamodel */,
 			);
-			currentVersion = D79E2A631D3F5FBB000ABE8D /* KLWeibo 5.xcdatamodel */;
+			currentVersion = D7D53E601D3F72BE001E089B /* KLWeibo 6.xcdatamodel */;
 			path = KLWeibo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

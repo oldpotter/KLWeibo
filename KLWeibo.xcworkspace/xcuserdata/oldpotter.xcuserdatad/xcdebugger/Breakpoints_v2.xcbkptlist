@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KLWeibo/View/KLWBHomeTableViewCell.m"
-            timestampString = "490694726.952512"
+            timestampString = "490698352.553652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "-bindViewModel"
             landmarkType = "5">
          </BreakpointContent>
