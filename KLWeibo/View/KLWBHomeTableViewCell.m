@@ -7,7 +7,7 @@
 //
 
 #import "KLWBHomeTableViewCell.h"
-#
+#define useContainer 0
 
 @interface KLWBHomeTableViewCell()
 /**
@@ -24,10 +24,7 @@
 @property (nonatomic,strong) UILabel *lblDate;
 
 @property (nonatomic,strong) UIImageView *ivImage;
-/**
- *  放图片组的容器
- */
-@property (nonatomic,strong) UIView *imageArrayContainer;
+
 @property (nonatomic,strong) UIImageView *ivImage1;
 @property (nonatomic,strong) UIImageView *ivImage2;
 @property (nonatomic,strong) UIImageView *ivImage3;
@@ -93,39 +90,28 @@
     }];
     
 
-    
-    //图片组容器
-    self.imageArrayContainer = [[UIView alloc] init];
-    [self.contentView addSubview:self.imageArrayContainer];
-    [self.imageArrayContainer mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.ivAvatar.mas_left);
-        make.top.mas_equalTo(self.ivImage.mas_bottom).offset(kPadding);
-        make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(- kPadding * 2);
-    }];
-    
-    
     //图片组
     self.ivImage1 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage1];
+    [self.contentView addSubview:self.ivImage1];
     self.ivImage2 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage2];
+    [self.contentView addSubview:self.ivImage2];
     self.ivImage3 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage3];
+    [self.contentView addSubview:self.ivImage3];
     self.ivImage4 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage4];
+    [self.contentView addSubview:self.ivImage4];
     self.ivImage5 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage5];
+    [self.contentView addSubview:self.ivImage5];
     self.ivImage6 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage6];
+    [self.contentView addSubview:self.ivImage6];
     self.ivImage7 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage7];
+    [self.contentView addSubview:self.ivImage7];
     self.ivImage8 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage8];
+    [self.contentView addSubview:self.ivImage8];
     self.ivImage9 = [[UIImageView alloc] init];
-    [self.imageArrayContainer addSubview:self.ivImage9];
+    [self.contentView addSubview:self.ivImage9];
     
     [[RACObserve(self, viewModel) deliverOnMainThread] subscribeNext:^(id x) {
-
+        
         
         //ivImage1
         [self.ivImage1 mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +121,8 @@
             }else{
                 make.size.mas_equalTo(CGSizeZero);
             }
-            make.top.left.mas_equalTo(self.imageArrayContainer);
+            make.left.mas_equalTo(self.ivImage.mas_left);
+            make.top.mas_equalTo(self.ivImage.mas_bottom).offset(kPadding);
         }];
         
         //ivImage2
@@ -159,7 +146,7 @@
                 make.size.mas_equalTo(CGSizeZero);
             }
             make.top.mas_equalTo(self.ivImage1.mas_top);
-            make.right.mas_equalTo(self.imageArrayContainer);
+//            make.right.mas_equalTo(self.imageArrayContainer);
             make.left.mas_equalTo(self.ivImage2.mas_right);
         }];
         
@@ -209,7 +196,7 @@
             }
             make.top.mas_equalTo(self.ivImage4.mas_bottom);
             make.left.mas_equalTo(self.ivImage1.mas_left);
-            make.bottom.mas_equalTo(self.imageArrayContainer.mas_bottom);
+            make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(- kPadding * 2);
         }];
         
         //ivImage8
@@ -234,21 +221,9 @@
             }
             make.top.mas_equalTo(self.ivImage7.mas_top);
             make.left.mas_equalTo(self.ivImage8.mas_right);
-
+            
         }];
     }];
-    
-    self.ivImageArray = @[
-                          self.ivImage1,
-                          self.ivImage2,
-                          self.ivImage3,
-                          self.ivImage4,
-                          self.ivImage5,
-                          self.ivImage6,
-                          self.ivImage7,
-                          self.ivImage8,
-                          self.ivImage9
-                          ];
     
     MASAttachKeys(
                   self.ivAvatar,
@@ -264,9 +239,25 @@
                   self.ivImage6,
                   self.ivImage7,
                   self.ivImage8,
-                  self.ivImage9,
-                  self.imageArrayContainer
+                  self.ivImage9
                   )
+    
+    
+    
+    
+    self.ivImageArray = @[
+                          self.ivImage1,
+                          self.ivImage2,
+                          self.ivImage3,
+                          self.ivImage4,
+                          self.ivImage5,
+                          self.ivImage6,
+                          self.ivImage7,
+                          self.ivImage8,
+                          self.ivImage9
+                          ];
+    
+    
  
      
 }

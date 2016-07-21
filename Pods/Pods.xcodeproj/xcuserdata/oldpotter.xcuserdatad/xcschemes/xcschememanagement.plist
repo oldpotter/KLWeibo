@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Mantle.xcscheme</key>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LinqToObjectiveC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UIColor+BFPaperColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +62,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2DA1CEC5C5306ACB5EA86DE9ED5CB8AA</key>
+		<key>02F83584E8AA81C2F807AC31841FCDB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3CE72F7BEC834025F86A924537ADE226</key>
+		<key>12E2BC28C62976C425F4B71C2723F0B1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>426BC4549A625B5E1E4200D5261A98BF</key>
+		<key>251E7D84C53099B4C9056CDCB8324FEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B965C44D6CE33C4D2BC4BF9B3BE16F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5333511ED9733974A3DF6BF93F2D2C0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +92,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81FB82A455CABC2015C07CFE28CF091B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A8865D53903431FA4AC49F7E9B3F7CE5</key>
+		<key>9EAB3E42EF957541E6C3C76D35FD008E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3133184414520461AC3698E6405E158</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4D6631CB5A90EAB4076B122EA42CDA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC6A30CE62FA0E84201555AACD9D2C72</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,16 +15,8 @@
 @synthesize fetchRemoteCommand = _fetchRemoteCommand,fetchLocalCommand = _fetchLocalCommand;
 - (void)initialize
 {
-    self.title = @"主页";
-    
-    
-    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWBAccessToken];
-    if(!token)
-    {
-        NSLog(@"没有token");
-        return;
-    }
-    
+    [super initialize];
+    self.title = @"公共微博";
 }
 
 
@@ -50,9 +42,18 @@
     @weakify(self)
     if (!_fetchRemoteCommand) {
         _fetchRemoteCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+            
+            NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWBAccessToken];
+            if (!token) {
+                return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                    [subscriber sendError:[NSError errorWithDomain:KLWB_ERROR_NOLOGINUSER code:0 userInfo:nil]];
+                    return nil;
+                }];
+            }
+            
+            
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-                NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWBAccessToken];
                 NSDictionary *info = @{
                                        @"access_token" : token,
                                        @"count" : @50

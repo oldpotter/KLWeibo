@@ -10,6 +10,7 @@
 #import <WeiboSDK/WeiboSDK.h>
 #import "KLWBMainViewController.h"
 #import <MagicalRecord/MagicalRecord.h>
+#import <ReactiveCocoa.h>
 
 @interface AppDelegate ()<WeiboSDKDelegate>
 
@@ -32,6 +33,22 @@
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[KLWBMainViewController alloc] init];
     
+    [[self rac_signalForSelector:@selector(didReceiveWeiboRequest:) fromProtocol:@protocol(WeiboSDKDelegate)] subscribeNext:^(RACTuple *tuple) {
+        WBBaseRequest *request = tuple.first;
+        NSLog(@"收到request:%@",request);
+    }];
+    [[self rac_signalForSelector:@selector(didReceiveWeiboResponse:) fromProtocol:@protocol(WeiboSDKDelegate)] subscribeNext:^(RACTuple *tuple) {
+        WBBaseResponse *response = tuple.first;
+        NSLog(@"收到response:%@",response);
+        if ([response isKindOfClass:WBAuthorizeResponse.class]) {
+            WBAuthorizeResponse *authorizeResponse = (WBAuthorizeResponse *)response;
+            NSLog(@"认证结果：userID:%@,\n acessToken:%@,过期时间%@,刷新token%@ , userInfo:%@",authorizeResponse.userID,authorizeResponse.accessToken,authorizeResponse.expirationDate,authorizeResponse.refreshToken,authorizeResponse.userInfo);
+            [[NSUserDefaults standardUserDefaults] setValue:authorizeResponse.accessToken forKey:KLWBAccessToken];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+            [[NSNotificationCenter defaultCenter] postNotificationName:KLWB_DidAuthorizeNotification object:nil];
+        }
+    }];
+    
     return YES;
 }
 
@@ -51,21 +68,6 @@
     return [WeiboSDK handleOpenURL:url delegate:self];
 }
 
-- (void)didReceiveWeiboRequest:(WBBaseRequest *)request
-{
-    NSLog(@"收到request:%@",request);
-}
 
-- (void)didReceiveWeiboResponse:(WBBaseResponse *)response
-{
-    NSLog(@"收到response:%@",response);
-    if ([response isKindOfClass:WBAuthorizeResponse.class]) {
-        WBAuthorizeResponse *authorizeResponse = (WBAuthorizeResponse *)response;
-        NSLog(@"认证结果：userID:%@,\n acessToken:%@,过期时间%@,刷新token%@",authorizeResponse.userID,authorizeResponse.accessToken,authorizeResponse.expirationDate,authorizeResponse.refreshToken);
-        [[NSUserDefaults standardUserDefaults] setValue:authorizeResponse.accessToken forKey:KLWBAccessToken];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
-    
-}
 
 @end

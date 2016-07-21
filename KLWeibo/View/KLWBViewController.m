@@ -50,6 +50,9 @@
         [self.viewModel.fetchRemoteCommand execute:nil];
     }];
     
+    
+    
+    
 }
 
 

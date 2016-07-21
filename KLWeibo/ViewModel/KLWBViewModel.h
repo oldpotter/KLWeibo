@@ -14,6 +14,7 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
 #import <MJExtension/MJExtension.h>
+#import "Constant.h"
 
 @interface KLWBViewModel : NSObject
 
