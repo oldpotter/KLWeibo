@@ -98,7 +98,7 @@
     self.imageArrayContainer = [[UIView alloc] init];
     [self.contentView addSubview:self.imageArrayContainer];
     [self.imageArrayContainer mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.lblContent);
+        make.left.mas_equalTo(self.ivAvatar.mas_left);
         make.top.mas_equalTo(self.ivImage.mas_bottom).offset(kPadding);
         make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(- kPadding * 2);
     }];

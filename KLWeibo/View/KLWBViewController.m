@@ -32,8 +32,8 @@
     
     [self bindViewModel];
     
-    [self.viewModel.fetchLocalCommand execute:nil];
-//    [self.viewModel.fetchRemoteCommand execute:nil];
+//    [self.viewModel.fetchLocalCommand execute:nil];
+    [self.viewModel.fetchRemoteCommand execute:nil];
 }
 
 - (void)prepareUI{}
