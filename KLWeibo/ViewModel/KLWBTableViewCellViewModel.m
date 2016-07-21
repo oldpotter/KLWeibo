@@ -14,8 +14,11 @@
 {
     if (self = [super init]) {
         self.model = model;
+        [self initialize];
     }
     return self;
 }
+
+- (void)initialize{}
 
 @end

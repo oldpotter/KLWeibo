@@ -10,4 +10,12 @@
 
 @implementation KLWBHomeTableViewCellViewModel
 @synthesize model;
+
+- (void)initialize
+{
+    self.picURLs = [self.model.pic_urls linq_select:^id(NSDictionary *dict) {
+        return dict[@"thumbnail_pic"];
+    }];
+}
+
 @end

@@ -18,7 +18,7 @@
     self.title = @"主页";
     
     
-    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWAccessToken];
+    NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWBAccessToken];
     if(!token)
     {
         NSLog(@"没有token");
@@ -52,7 +52,7 @@
         _fetchRemoteCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
                 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-                NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWAccessToken];
+                NSString *token = [[NSUserDefaults standardUserDefaults] stringForKey:KLWBAccessToken];
                 NSDictionary *info = @{
                                        @"access_token" : token,
                                        @"count" : @50
@@ -78,7 +78,7 @@
                             NSLog(@"保存出错:%@",error);
                         }
                     }];
-                    
+                    @strongify(self)
                     self.dataSource = @[[weibos linq_select:^id(KLWBWeibo *weibo) {
                         return [[KLWBHomeTableViewCellViewModel alloc] initWithModel:weibo];
                     }]];

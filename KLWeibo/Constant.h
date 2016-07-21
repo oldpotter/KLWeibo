@@ -13,10 +13,10 @@
 #define KLWBAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 /*User Defaults*/
-#define KLWAccessToken @"KLWAccessToken"
+#define KLWBAccessToken @"KLWAccessToken"
 
 /*UI*/
-#define KLWScreenWidth [UIScreen mainScreen].bounds.size.width
-#define KLWScreenHeight [UIScreen mainScreen].bounds.size.height
+#define KLWBScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KLWBScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif /* Constant_h */

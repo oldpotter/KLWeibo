@@ -62,7 +62,7 @@
     if ([response isKindOfClass:WBAuthorizeResponse.class]) {
         WBAuthorizeResponse *authorizeResponse = (WBAuthorizeResponse *)response;
         NSLog(@"认证结果：userID:%@,\n acessToken:%@,过期时间%@,刷新token%@",authorizeResponse.userID,authorizeResponse.accessToken,authorizeResponse.expirationDate,authorizeResponse.refreshToken);
-        [[NSUserDefaults standardUserDefaults] setValue:authorizeResponse.accessToken forKey:KLWAccessToken];
+        [[NSUserDefaults standardUserDefaults] setValue:authorizeResponse.accessToken forKey:KLWBAccessToken];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
     

@@ -13,4 +13,6 @@
 
 @property (nonatomic,strong) KLWBWeibo *model;
 
+@property (nonatomic,strong) NSArray *picURLs;
+
 @end

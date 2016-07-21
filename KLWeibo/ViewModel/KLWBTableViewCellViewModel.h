@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <LinqToObjectiveC.h>
 
 @interface KLWBTableViewCellViewModel : NSObject
 
 @property (nonatomic,strong) KLWBTableViewCellViewModel *model;
 
 - (instancetype)initWithModel:(id)model;
+
+- (void)initialize;
 
 @end

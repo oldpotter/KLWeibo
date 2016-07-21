@@ -82,7 +82,7 @@
     [self.view addSubview:tabBar];
     [tabBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(self.view);
-        make.height.mas_equalTo(KLWScreenHeight/12);
+        make.height.mas_equalTo(KLWBScreenHeight/12);
     }];
     tabBar.backgroundColor = [UIColor paperColorTeal400];
     
@@ -102,7 +102,7 @@
     [home mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.mas_equalTo(tabBar).insets(insets);
         make.width.mas_equalTo(home.mas_height);
-        make.left.mas_equalTo(tabBar.mas_left).offset(KLWScreenWidth/10);
+        make.left.mas_equalTo(tabBar.mas_left).offset(KLWBScreenWidth/10);
     }];
     
     KLWBHomeViewModel *homeVM = [[KLWBHomeViewModel alloc] init];
